@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block post %}
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-3 login">
+            <form class="form-signin form " id="login_form" method="post" action="/login/">
+                {% csrf_token %}
+                    <div class="page-header alert alert-info text-center" role="alert">
+                        Sing in to Continue
+                    </div>
+                <label for="inputEmail" class="sr-only">Username</label>
+                <input type="text" name="username" value="" size="50" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
+                <br>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password"  name="password" value="" size="50" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <div class= "text-center">
+                    <button class="btn btn-lg btn-primary btn-success" type="submit" value="submit">Sign in</button>
+                </div>
+                <br>
+                <div class= "text-center">
+                    <p class="text-muted">Not Registered? Singup for Free</p>
+                    <a href="{% url 'blog_singup' %}"><button class="btn btn-lg btn-primary btn-default">Singup</button></a>
+                </div>
+                <br>
+            </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

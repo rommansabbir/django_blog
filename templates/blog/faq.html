@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block FAQ %}
+    <br><br><br><br><br>
+    <div class="container blogpost" id="faq">
+        <section>
+            <div class="page-header" >
+                <h2>FAQ<br><small>It's good to ask questions. If you happen to have one, I promise that I will respond as soon as possible.</small></h2>
+            </div>
+
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion" class="collapsed">
+                                What are your favourite resources or recommendations for beginners who want to learn to write code?
+                            </a>
+                        </div>
+                        <div id="collapse-1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>
+                                    I think that the <a href="https://www.codecademy.com/learn/python">Python course on Codecademy</a>
+                                    is a fantastic place to start because you don't have to download anything and it really seems to
+                                    guide you through the process, even offering hints for when you get stuck.
+                                </p>
+                                <p>
+                                    If for some reason you'd prefer not to learn Python, my second language of choice for beginners would
+                                    be <a href="http://www.javascript.com">JavaScript</a>. This is now commonly referred to as "the universal
+                                    language of the web" becuase of its mass adoption by many major tech companies and professionals,
+                                    as well as the fact that all modern browsers can understand and run it. Web development is the place to be
+                                    these days, but you can of course do web development in Python as well.
+                                </p>
+                                <p>
+                                    If you feel a little more confident, or want to try writing some code outside of the browser, I
+                                    think that YouTube is the best resource by far. Specifically, my favourite series is called
+                                    <a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDe8XSftW-RAxdo6OmaeL85M">Python 3 Basics Tutorial Series</a>
+                                    which is by a guy called Harrison Kinsley. He also does some much more advanced tutorials which I
+                                    also love. I should probably add that I'm not affiliated with him or his site in any way. Some other good
+                                    tutorials for Python are <a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_">here</a>,
+                                    <a href="https://www.youtube.com/watch?v=N4mEzFDjqtA">here</a> and
+                                    <a href="https://www.youtube.com/watch?v=cpPG0bKHYKc">here</a>.
+                                </p>
+                                <p>
+                                    With all that said, just because I learnt Python first does not mean that you have to as well. Technologies are
+                                    changing all the time and tomorrow there may well be something even better for beginners than what I have suggested.
+                                    Honestly though, I wouldn't spend too much time choosing a language because if you just pick one and manage to learn
+                                    how to program (which won't happen overnight, so just keep working at it if you haven't got there yet) using that language
+                                    then 90% of the skills you've learnt will be transferrable to any other popular language. So the bottom line - choose a
+                                    language and stick with it until you can code.
+                                </p>
+                                <p>
+                                    Just a final sidenote; <strong><i>if you find projects to work on that you are really passionate about, you will learn much faster</i></strong> and much more
+                                    easily than if you were to think about programming like you do your other tedious work that you've been putting off for ages.
+                                </p><hr>
+                                <h3 class="text-center"><a href="{% url 'blog_index' %}" class="btn btn-success">Return to Homepage</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><br><br>
+{% endblock %}
